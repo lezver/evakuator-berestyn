@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --default-font-family: var(--font-sans);
@@ -162,6 +163,9 @@
   }
 }
 @layer utilities {
+  .bg-slate-300 {
+    background-color: var(--color-slate-300);
+  }
   .bg-slate-500 {
     background-color: var(--color-slate-500);
   }
