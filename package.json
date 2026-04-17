@@ -1,0 +1,15 @@
+{
+	"name": "evakuator-berestyn",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/style.css --minify",
+		"watch": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/style.css --watch",
+		"serve": "npx live-server src --port=3000 --open=/index.html"
+	},
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.2.2",
+		"live-server": "^1.2.2",
+		"tailwindcss": "^4.2.2"
+	}
+}
