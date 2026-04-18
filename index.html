@@ -8,16 +8,31 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="bg-slate-500 text-slate-100">
-
-<h1 class="text-5xl text-amber-400">Евакуатор Берестин</h1>
-<div class="h-100 w-100 bg-amber-900"></div>
+<body class="relative h-screen bg-blue-950  text-slate-100">
 
 
+  <div id="loader" class="absolute size-full transition-opacity duration-500 opacity-100 bg-gradient-to-b from-blue-950 to-slate-950 z-10">
+    <div class="relative size-full">
+      <div class="w-42 h-42 animate-bounce absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      <img class="size-full object-contain" src="./images/towTrack.webp" alt="Завантаження..." >
+      </div>
 
-<div class="h-100 w-100 bg-amber-900"></div>
-<img src="./images/hero.webp" alt="">
-<img src="./images/icon.ico" alt="">
-<img src="/images/loader.webp" alt="">
+      <div class="bg-stone-600 w-full h-32 absolute top-1/2 -translate-y-1/2"></div>
+       <div class="road-dashes absolute inset-x-0 top-1/2 -translate-y-1/2 h-2"></div>
+    </div>
+  </div>
+
+
+ <div id="page-wrapper" class="flex-auto flex flex-col transition-opacity duration-500 opacity-0 pointer-events-none">
+   <header>header</header>
+  <main class="flex-auto">main
+
+    <div class="container mx-auto">container</div>
+  </main>
+  <footer>footer</footer>
+ </div>
+
+<script type="module" src="./js/loader.js"></script>
+
 </body>
 </html>

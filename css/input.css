@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* html {
+	height: 100%;
+} */
+
+.road-dashes {
+	background-image: repeating-linear-gradient(
+		90deg,
+		transparent 0 24px,
+		rgba(255, 255, 255, 0.9) 24px 64px
+	);
+	background-size: 56px 100%;
+	animation: road-dash 1s linear infinite;
+	opacity: 0.85;
+}
+
+@keyframes road-dash {
+	to {
+		background-position: -56px 0;
+	}
+}
