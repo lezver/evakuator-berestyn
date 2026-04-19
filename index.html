@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body class="flex min-h-screen bg-gray-700/70 text-white">
+  <body
+    class="flex min-h-screen text-white relative min-h-dvh w-full before:fixed before:inset-0 before:-z-10 before:bg-[linear-gradient(rgba(54,65,83,0.5),rgba(54,65,83,0.5)),url('../images/bg.webp')] before:bg-center before:bg-cover before:bg-no-repeat"
+  >
     <!-- <div
       id="loader"
       class="absolute size-full transition-opacity duration-500 opacity-100 bg-gradient-to-b from-blue-950 to-slate-950 z-10"
@@ -76,7 +78,7 @@
         <section class="min-h-dvh flex">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-auto">
             <div
-              class="pt-44 pb-24 sm:py-16 flex-auto flex flex-col items-center justify-center gap-12"
+              class="pt-44 pb-24 sm:py-32 md:py-38 flex-auto flex flex-col items-center justify-center gap-12"
             >
               <h1
                 class="text-4xl sm:text-5xl md:text-7xl flex flex-col items-center gap-y-4 text-center text-shadow-lg/20 tracking-tight"
@@ -94,10 +96,10 @@
               </h1>
 
               <div
-                class="px-6 sm:px-12 md:px-20 py-4 sm:py-8 md:py-12 rounded-xl bg-gradient-to-l from-gray-500/0 to-gray-500/80 flex flex-col gap-y-4 sm:gap-y-8 md:gap-y-12 text-center"
+                class="px-6 sm:px-12 md:px-20 py-4 sm:py-8 md:py-12 rounded-xl bg-gradient-to-l from-gray-500/0 to-gray-500/80 flex flex-col gap-y-4 sm:gap-y-8 md:gap-y-12"
               >
                 <h2
-                  class="text2xl sm:text-3xl uppercase font-semibold tracking-tight text-shadow-lg/20"
+                  class="text2xl sm:text-3xl uppercase font-semibold tracking-tight text-shadow-lg/20 text-center"
                 >
                   Послуги евакуатора ціна за
                   <span class="font-bold text-red-500"> 1 км </span>
@@ -107,7 +109,7 @@
                 </h2>
 
                 <ul
-                  class="flex flex-col sm:text-lg md:text-xl gap-y-4 text-shadow-lg/10 text-gray-100"
+                  class="flex flex-col sm:text-lg md:text-xl gap-y-4 text-shadow-lg/10 text-gray-200 *:relative *:pl-7 *:before:content-['\2713'] *:before:absolute *:before:left-0 *:before:text-red-500 *:before:font-bold *:before:text-lg"
                 >
                   <li>Швидка подача</li>
                   <li>Режим роботи 24/7</li>
