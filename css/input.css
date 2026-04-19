@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  /* Реєструємо анімацію в темі */
+  --animate-phone-wiggle: wiggle 1s ease-in-out infinite;
+
+  /* Прописуємо самі кроки анімації */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+}
+
 /* html {
 	min-height: 100%;
 } */
@@ -20,3 +31,8 @@
 		background-position: -56px 0;
 	}
 } */
+#page-wrapper {
+	background:
+		linear-gradient(rgba(54 ,65 ,83, 0.5), rgba(54 ,65 ,83, 0.5)),
+		url("../images/bg.webp") center / cover no-repeat fixed;
+}
