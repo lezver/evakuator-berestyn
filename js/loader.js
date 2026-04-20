@@ -1,5 +1,4 @@
 const loader = document.getElementById("loader");
-const pageWrapper = document.getElementById("page-wrapper");
 
 window.addEventListener(
 	"load",
