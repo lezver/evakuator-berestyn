@@ -401,9 +401,11 @@
               </ul>
 
               <button
+                type="button"
                 class="swiper-button-prev p-2 rounded-full bg-red-400/20 border-2 border-red-500 brightness-125 shadow-lg"
               ></button>
               <button
+                type="button"
                 class="swiper-button-next p-2 rounded-full bg-red-400/20 border-2 border-red-500 brightness-125 shadow-lg"
               ></button>
             </div>
@@ -461,6 +463,7 @@
       >
         <div class="flex w-full md:w-3/4 h-[45dvh] rounded-lg overflow-hidden">
           <iframe
+            title="Карта розташування евакуатора в Берестині"
             class="size-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30936.891511937854!2d35.43609429311489!3d49.3708647423196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d8f5c550a4db45%3A0x2e2576b11ed3b3b!2z0JHQtdGA0LXRgdGC0LjQvSwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDYzMzA0!5e1!3m2!1suk!2sua!4v1776619329918!5m2!1suk!2sua"
             style="border: 0"
@@ -494,6 +497,8 @@
 
     <div class="fixed bottom-4 right-4 z-50">
       <button
+        type="button"
+        aria-label="Відкрити контакти"
         id="contact-toggle"
         class="flex items-center justify-center bg-red-500 p-4 rounded-full shadow-lg hover:bg-red-600 transition duration-300 animate-pulse hover:animate-none hover:cursor-pointer active:bg-red-700"
       >
@@ -509,6 +514,7 @@
             href="https://t.me/+380951084135"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Написати у Telegram"
           >
             <i
               class="fa-brands fa-telegram text-4xl hover:text-red-500 transition duration-300"
@@ -521,6 +527,7 @@
             href="https://www.instagram.com/vo_2598?igsh=OGlvdmo0Z3hkMXd1&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Ми в Instagram"
           >
             <i
               class="fa-brands fa-instagram text-4xl hover:text-red-500 transition duration-300"
@@ -533,6 +540,7 @@
             href="viber://chat?number=%2B380951084135"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Написати у Viber"
           >
             <i
               class="fa-brands fa-viber text-4xl hover:text-red-500 transition duration-300"
@@ -541,7 +549,10 @@
         </li>
 
         <li>
-          <a href="mailto:vlebed932@gmail.com">
+          <a
+            href="mailto:vlebed932@gmail.com"
+            aria-label="Надіслати електронний лист"
+          >
             <i
               class="fa-solid fa-envelope text-3xl hover:text-red-500 transition duration-300"
             ></i>
@@ -549,7 +560,7 @@
         </li>
 
         <li>
-          <a href="tel:+380951084135">
+          <a href="tel:+380951084135" aria-label="Зателефонувати нам">
             <i
               class="fa-solid fa-phone text-3xl hover:text-red-500 transition duration-300"
             ></i>
