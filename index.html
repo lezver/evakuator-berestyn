@@ -26,11 +26,11 @@
   </head>
 
   <body
-    class="flex bg-gray-700/80 text-white min-h-dvh w-full before:fixed before:inset-0 before:-z-10 before:bg-[linear-gradient(rgba(54,65,83,0.5),rgba(54,65,83,0.5)),url('../images/bg.webp')] before:bg-center before:bg-cover before:bg-no-repeat before:blur-[2px] before:scale-110"
+    class="overflow-hidden flex bg-gray-700/80 text-white min-h-dvh w-full before:fixed before:inset-0 before:-z-10 before:bg-[linear-gradient(rgba(54,65,83,0.5),rgba(54,65,83,0.5)),url('../images/bg.webp')] before:bg-center before:bg-cover before:bg-no-repeat before:blur-[2px] before:scale-110"
   >
-    <!-- <div
+    <div
       id="loader"
-      class="absolute size-full transition-opacity duration-500 opacity-100 bg-gradient-to-b from-blue-950 to-slate-950 z-10"
+      class="absolute size-full transition-opacity duration-300 bg-gray-300/50 backdrop-blur-xl z-100"
     >
       <div class="relative size-full">
         <div
@@ -38,15 +38,19 @@
         >
           <img
             class="size-full object-contain"
-            src="./images/towTrack.webp"
+            src="./images/loader.webp"
             alt="Завантаження..."
           />
         </div>
 
-        <div class="bg-stone-600 w-full h-32 absolute top-1/2 -translate-y-1/2"></div>
-        <div class="road-dashes absolute inset-x-0 top-1/2 -translate-y-1/2 h-2"></div>
+        <div
+          class="bg-stone-500 w-full h-32 absolute top-1/2 -translate-y-1/2"
+        ></div>
+        <div
+          class="road-dashes absolute inset-x-0 top-1/2 -translate-y-1/2 h-2"
+        ></div>
       </div>
-    </div> -->
+    </div>
 
     <div id="page-wrapper" class="flex-auto flex flex-col">
       <header

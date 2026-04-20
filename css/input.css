@@ -49,8 +49,6 @@
 		max-width: 840px;
 		height: 75vh;
 	}
-
-
 }
 
 @media (max-width: 892px) {
@@ -70,27 +68,15 @@
 	}
 }
 
-
 @media (max-width: 420px) {
 	.swiper {
 		max-width: 288px;
 
 	}
-
-
 }
 
-/* @media (max-width: 480px) {
-	.swiper {
-		height: 40vh;
-	}
-} */
 
-/* html {
-	min-height: 100%;
-} */
-
-/* .road-dashes {
+.road-dashes {
 	background-image: repeating-linear-gradient(
 		90deg,
 		transparent 0 24px,
@@ -105,9 +91,5 @@
 	to {
 		background-position: -56px 0;
 	}
-} */
-/* #page-wrapper {
-	background:
-		linear-gradient(rgba(54 ,65 ,83, 0.5), rgba(54 ,65 ,83, 0.5)),
-		url("../images/bg.webp") center / cover no-repeat fixed;
-} */
+}
+
