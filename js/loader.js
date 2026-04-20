@@ -6,11 +6,11 @@ window.addEventListener(
 		setTimeout(() => {
 			loader.classList.add("opacity-0", "pointer-events-none", "inset-0");
 			document.body.classList.remove("overflow-hidden");
-		}, 1000);
+		}, 1500);
 
 		setTimeout(() => {
 			loader.remove();
-		}, 1300);
+		}, 1750);
 	},
 	{ once: true },
 );
