@@ -9,7 +9,82 @@
     0%, 100% { transform: rotate(-5deg); }
     50% { transform: rotate(5deg); }
   }
+
+	  --animate-marquee: marquee 20s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
 }
+
+.swiper {
+	width: 100%;
+	max-width: 992px;
+	height: 65vh;
+	--swiper-navigation-color: rgb(239 68 68);
+	> button > svg {
+		object-view-box: 0 0 44 44;
+	}
+}
+
+.swiper-slide {
+	width: 100%;
+}
+.swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media (max-width: 1098px) {
+	.swiper {
+		max-width: 902px;
+		height: 75vh;
+	}
+}
+
+@media (max-width: 1024px) {
+	.swiper {
+		max-width: 840px;
+		height: 75vh;
+	}
+
+
+}
+
+@media (max-width: 892px) {
+	.swiper {
+		max-width: 590px;
+		height: 75vh;
+	}
+
+	.swiper button {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+	.swiper {
+		max-width: 380px;
+	}
+}
+
+
+@media (max-width: 420px) {
+	.swiper {
+		max-width: 288px;
+
+	}
+
+
+}
+
+/* @media (max-width: 480px) {
+	.swiper {
+		height: 40vh;
+	}
+} */
 
 /* html {
 	min-height: 100%;
