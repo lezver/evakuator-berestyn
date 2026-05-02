@@ -1,10 +1,11 @@
 let isTicking = false;
 
+const header = document.getElementById("header");
+const heroSection = document.getElementById("hero");
+
 document.addEventListener("scroll", () => {
 	if (!isTicking) {
 		window.requestAnimationFrame(() => {
-			const header = document.getElementById("header");
-
 			if (!header) return;
 
 			if (window.scrollY > 0) {
@@ -19,3 +20,5 @@ document.addEventListener("scroll", () => {
 		isTicking = true;
 	}
 });
+
+heroSection.style.minHeight = `calc(100vh - ${header.offsetHeight}px)`;
